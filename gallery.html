@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Галерея морских прогулок, рыбалки, свиданий и отдыха на яхте.">
+  <title>Галерея | Прогулки по морю</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gallery-page">
+  <header class="site-header site-header--solid" data-header>
+    <a class="brand" href="index.html" aria-label="Вернуться на главную">
+      <span class="brand__mark">ПМ</span>
+      <span class="brand__text">Прогулки по морю</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" data-nav>
+      <a href="index.html#activities">Занятия</a>
+      <a href="index.html#about">О нас</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container gallery-hero__inner reveal">
+        <a class="back-link" href="index.html">Вернуться на главную</a>
+        <p class="eyebrow">Моменты на воде</p>
+        <h1>Галерея</h1>
+        <p>Фотографии рыбалки, свиданий, отдыха с компанией и морских маршрутов.</p>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="gallery-filters reveal" aria-label="Фильтры галереи">
+          <button class="filter-btn is-active" type="button" data-filter="all">Все</button>
+          <button class="filter-btn" type="button" data-filter="fishing">Рыбалка</button>
+          <button class="filter-btn" type="button" data-filter="dates">Свидания</button>
+          <button class="filter-btn" type="button" data-filter="company">Компании</button>
+          <button class="filter-btn" type="button" data-filter="nature">Природа</button>
+        </div>
+
+        <div class="gallery-grid" data-gallery>
+          <button class="gallery-item reveal" type="button" data-category="fishing" data-full="images/gallery/sea-fishing.jpg" data-caption="Морская рыбалка">
+            <img src="images/gallery/sea-fishing.jpg" alt="Морская рыбалка" loading="lazy">
+            <span>Рыбалка</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-category="dates" data-full="images/gallery/romantic-yacht.jpg" data-caption="Свидание на яхте">
+            <img src="images/gallery/romantic-yacht.jpg" alt="Сервировка для свидания на яхте" loading="lazy">
+            <span>Свидания</span>
+          </button>
+          <button class="gallery-item gallery-item--tall reveal" type="button" data-category="nature" data-full="images/locations/coast-view.jpg" data-caption="Красивый морской маршрут">
+            <img src="images/locations/coast-view.jpg" alt="Красивый морской маршрут" loading="lazy">
+            <span>Природа</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-category="company" data-full="images/activities/fish-cooking.jpg" data-caption="Свежий улов на борту">
+            <img src="images/activities/fish-cooking.jpg" alt="Свежий улов на борту" loading="lazy">
+            <span>Компании</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-category="fishing" data-full="images/gallery/fishing-day.jpg" data-caption="День рыбалки">
+            <img src="images/gallery/fishing-day.jpg" alt="День рыбалки" loading="lazy">
+            <span>Рыбалка</span>
+          </button>
+          <button class="gallery-item gallery-item--wide reveal" type="button" data-category="dates" data-full="images/gallery/romantic-yacht.jpg" data-caption="Вечер на палубе">
+            <img src="images/gallery/romantic-yacht.jpg" alt="Вечер на палубе" loading="lazy">
+            <span>Свидания</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-cta">
+      <div class="container reveal">
+        <h2>Готовы выйти в море?</h2>
+        <a class="btn btn--primary" href="index.html#contacts">Вернуться на главную</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" data-lightbox aria-hidden="true">
+    <button class="lightbox__close" type="button" aria-label="Закрыть" data-lightbox-close></button>
+    <img src="" alt="" data-lightbox-img>
+    <p data-lightbox-caption></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

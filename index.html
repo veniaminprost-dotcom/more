@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Прогулки по морю: яхтенные прогулки, рыбалка, свидания, отдых с друзьями и красивые маршруты по побережью.">
+  <title>Прогулки по морю | Яхтенные прогулки</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" data-header>
+    <a class="brand" href="#hero" aria-label="Прогулки по морю">
+      <span class="brand__mark">ПМ</span>
+      <span class="brand__text">Прогулки по морю</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" data-nav>
+      <a href="#activities">Занятия</a>
+      <a href="#about">О нас</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero" aria-label="Морская прогулка на яхте">
+      <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="images/gallery/sea-fishing.jpg" data-hero-video>
+        <source src="video/hero.mp4" type="video/mp4">
+        <source src="обложка/видео%20для%20обложки.MOV" type="video/quicktime">
+        Ваш браузер не поддерживает видео. На фоне показана фотография морской прогулки.
+      </video>
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow reveal-hero">Яхтенные прогулки и морские приключения</p>
+        <h1 class="hero__title reveal-hero">Прогулки по морю</h1>
+        <p class="hero__subtitle reveal-hero">Незабываемые впечатления и приключения</p>
+        <a class="btn btn--primary reveal-hero" href="#contacts">Забронировать прогулку</a>
+      </div>
+      <a class="scroll-cue" href="#activities" aria-label="Перейти к занятиям"></a>
+    </section>
+
+    <section class="section section--cream" id="activities">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">На борту</p>
+          <h2>Чем можно заняться</h2>
+          <p>Выберите спокойный закат, активный день на воде или камерный праздник с близкими.</p>
+        </div>
+
+        <div class="activity-grid">
+          <article class="activity-card reveal">
+            <img src="images/fishing/fishing-sea.jpg" alt="Морская рыбалка на лодке" loading="lazy">
+            <div class="activity-card__body">
+              <span class="activity-card__icon" aria-hidden="true">01</span>
+              <h3>Рыбалка</h3>
+              <p>Ловите рыбу в живописных морских местах</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal">
+            <img src="images/activities/romantic-date.jpg" alt="Романтический фуршет на яхте" loading="lazy">
+            <div class="activity-card__body">
+              <span class="activity-card__icon" aria-hidden="true">02</span>
+              <h3>Романтические свидания</h3>
+              <p>Устройте незабываемое свидание на закате</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal">
+            <img src="images/gallery/sea-fishing.jpg" alt="Отдых компанией у моря" loading="lazy">
+            <div class="activity-card__body">
+              <span class="activity-card__icon" aria-hidden="true">03</span>
+              <h3>Отдых с друзьями</h3>
+              <p>Веселитесь компанией на борту яхты</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal">
+            <img src="images/fishing/fishing-sea.jpg" alt="Чистая морская вода рядом с лодкой" loading="lazy">
+            <div class="activity-card__body">
+              <span class="activity-card__icon" aria-hidden="true">04</span>
+              <h3>Купание и дайвинг</h3>
+              <p>Ныряйте в кристально чистую воду</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal">
+            <img src="images/activities/fish-cooking.jpg" alt="Приготовление свежей рыбы" loading="lazy">
+            <div class="activity-card__body">
+              <span class="activity-card__icon" aria-hidden="true">05</span>
+              <h3>Приготовление рыбы на яхте</h3>
+              <p>Готовьте свежий улов прямо на борту</p>
+            </div>
+          </article>
+
+          <article class="activity-card reveal">
+            <img src="images/locations/coast-view.jpg" alt="Живописное морское побережье" loading="lazy">
+            <div class="activity-card__body">
+              <span class="activity-card__icon" aria-hidden="true">06</span>
+              <h3>Красивые места</h3>
+              <p>Посетите самые живописные уголки побережья</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__copy reveal">
+          <p class="eyebrow">Премиальный отдых</p>
+          <h2>Почему выбирают нас</h2>
+          <p>Мы создаем морские прогулки под настроение гостей: от спокойной рыбалки и семейного купания до романтического ужина на закате. Маршрут, темп и формат отдыха подбираются индивидуально.</p>
+          <a class="btn btn--secondary" href="gallery.html">Смотреть фотогалерею</a>
+        </div>
+
+        <div class="feature-list">
+          <div class="feature reveal">
+            <span class="feature__icon">К</span>
+            <h3>Опытные капитаны</h3>
+            <p>Спокойное управление маршрутом и знание лучших морских точек.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">Я</span>
+            <h3>Комфортабельные яхты</h3>
+            <p>Уютные зоны отдыха, чистая палуба и все необходимое для дня на воде.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">И</span>
+            <h3>Индивидуальный подход</h3>
+            <p>Поможем собрать прогулку под свидание, праздник или активный отдых.</p>
+          </div>
+          <div class="feature reveal">
+            <span class="feature__icon">Э</span>
+            <h3>Незабываемые эмоции</h3>
+            <p>Море, закаты, свежий воздух и впечатления, которые хочется повторить.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacts">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div>
+            <p class="eyebrow">Бронирование</p>
+            <h2>Свяжитесь с нами</h2>
+            <p class="contact-card__lead">Ваш капитан поможет выбрать маршрут, время выхода и формат прогулки.</p>
+          </div>
+          <div class="contact-card__details">
+            <a class="contact-phone" href="tel:+77777777777">+7 (777) 777-77-77</a>
+            <p>Ежедневно с 09:00 до 21:00</p>
+            <div class="contact-actions">
+              <a class="btn btn--primary" href="https://max.ru/" target="_blank" rel="noopener">Написать в Max</a>
+              <a class="btn btn--ghost" href="tel:+77777777777">Позвонить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 Прогулки по морю</p>
+      <a href="gallery.html">Галерея</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
